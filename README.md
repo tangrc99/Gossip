@@ -46,16 +46,16 @@ Gossip 是 Gossip 协议的一个简单 C++ 实现，采用了 Gossip 协议的�
     
 //	成功的输出
 //    {
-//        "external_address": "127.0.0.1:9999",
-//                "internal_address": "127.0.0.1:8888",
-//                "mem_use": 0,
-//                "name": "1",
-//                "peers": [
-//        {
-//            "address": "127.0.0.1:8889",
+// 				"external_address": "127.0.0.1:9999",
+//				"internal_address": "127.0.0.1:8888",
+//				"mem_use": 0,
+//        "name": "1",
+//        "peers": [
+//        		{
+//            				"address": "127.0.0.1:8889",
 //                    "alive": true,
 //                    "name": "2"
-//        }
+//        		 }
 //        ]
 //    }
     
