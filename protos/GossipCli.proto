@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package pf_gossip_cli;
+
+import "Gossip.proto";
+import "google/protobuf/any.proto";
+
+message Key{
+  string content = 1;
+}
+
+message JsonValue{
+  string content = 2; // json 格式
+}
+
+message Url{
+  string content = 1;
+}
+
+message Echo{
+  bool succeed = 1;
+  string message = 2;
+}
+
+message SearchInfo{
+  string key = 1;
+  bool latest = 2;
+}
+
+service GossipClient{
+
+  rpc addMessage(pf_gossip.Message) returns(Echo);
+  rpc deleteMessage(Key) returns(Echo);
+  rpc getMessage(Key) returns(pf_gossip.Message);  // 查找 message 信息
+  rpc searchMessage(SearchInfo) returns(pf_gossip.SearchResult);
+
+  rpc getGossipNetwork(google.protobuf.Any) returns(JsonValue); // 当前的网络结构
+  rpc getNodeStatus(google.protobuf.Any) returns(JsonValue);  // 当前节点的状态信息
+
+  rpc echo(Echo) returns(Echo);
+  rpc connect(Url) returns(Echo);   // 将当前节点连接到某个节点上
+  rpc shutdown(google.protobuf.Any) returns(Echo); // 关闭
+}
