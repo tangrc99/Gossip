@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['deletemessage_0',['deleteMessage',['../classgossip_1_1client_1_1_gossip_client.html#aa892deb524230027e0de607ee4ac7da0',1,'gossip::client::GossipClient::deleteMessage()'],['../classgossip_1_1server_1_1_gossip_node.html#a21b0b1233eefe0a2d3a46d693baf01cf',1,'gossip::server::GossipNode::deleteMessage()'],['../classgossip_1_1server_1_1service_1_1_gossip_cli_service.html#ab12f4c359c9c11b1fc73d526f204cc1f',1,'gossip::server::service::GossipCliService::deleteMessage()']]],
+  ['deletenodenotify_1',['deleteNodeNotify',['../classgossip_1_1server_1_1_gossip_peer_node.html#a17ccfec64754f58c93eee5917cb474df',1,'gossip::server::GossipPeerNode::deleteNodeNotify(const std::string &amp;name, const std::string &amp;address, SlotVersion version)'],['../classgossip_1_1server_1_1_gossip_peer_node.html#a09b6223a4334ca755936122c19309871',1,'gossip::server::GossipPeerNode::deleteNodeNotify(const pf_gossip::GossipNodeInfo *origin)'],['../classgossip_1_1server_1_1service_1_1_gossip_service.html#abe423147c196c1f2686050e87a10edb4',1,'gossip::server::service::GossipService::deleteNodeNotify()']]]
+];
